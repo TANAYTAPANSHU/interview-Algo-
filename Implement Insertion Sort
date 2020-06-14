@@ -1,0 +1,27 @@
+Insertion sort 
+Time complexity = O(n^2)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function insertionSort(array) {
+  // change code below this line
+let temp=0;
+for(let i=1;i<array.length;i++)
+{ 
+  let key = array[i];
+  let t =i;
+  for(let j=i-1;j>=0 && array[j]>key;j--)
+{
+ temp=array[t];
+        array[t]=array[j];
+     array[j]=temp;
+     t--;
+}
+
+
+}
+
+  return array;
+  // change code above this line
+}
+
+insertionSort([1, 4, 2, 8, 345, 123]);
